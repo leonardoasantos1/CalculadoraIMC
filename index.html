@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <main>
+        <form class="card" id="formulario-imc">
+            <h1>Calculadora IMC</h1>
+            <div class="container-inputs">
+                <div>
+                    <label for="input-peso">Peso (kg)</label>
+                    <input type="text" id="input-peso" placeholder="ex: 78.3" required>
+                </div>
+                <div>
+                    <label for="input-altura">Altura (cm)</label>
+                    <input type="text" id="input-altura" placeholder="ex: 175" required>
+                </div>
+            </div>
+            <div id="botoes-container">
+                <button type="submit">Calcular</button>
+                <button type="reset" class="escondido" id="resetar">Resetar</button>
+            </div>
+            <div id="resultado-container" class="escondido">
+                <p id="resultado-label">Resultado</p>
+                <p id="resultado-imc">25.38</p>
+                <p id="classificacao-imc">Normal</p>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <a href="https://www.linkedin.com/in/leonardo-alvess/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/leonardoasantos1" target="_blank"><i class="fab fa-github"></i></a>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
